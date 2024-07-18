@@ -14,12 +14,12 @@ Asegúrate de tener instalados los siguientes programas:
 
 1. Clona el repositorio del tema a tu directorio de temas de WordPress:
 
-   ```sh
+   ````sh
    git clone <URL_DEL_REPOSITORIO> wp-content/themes/orobianco
-     sh
-   ```
+     sh```
 
    Navega al directorio del tema:
+   ````
 
 cd wp-content/themes/orobianco
 
