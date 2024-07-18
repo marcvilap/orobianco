@@ -38,14 +38,16 @@ Desarrollo
 
 pnpm run dev:css
 
+```
 sh
 
-````
+```
+
 Este comando compila los archivos CSS usando Tailwind CSS, genera un archivo bundle.css y observa los cambios en los archivos para recompilar automáticamente.
 
 Desarrollo de JS:
 
-```sh
+````sh
 
 pnpm run dev:js
 
