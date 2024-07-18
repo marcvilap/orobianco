@@ -16,79 +16,92 @@ Asegúrate de tener instalados los siguientes programas:
 
    ```sh
    git clone <URL_DEL_REPOSITORIO> wp-content/themes/orobianco
-
-    Navega al directorio del tema:
-
-    sh
+     sh
    ```
+
+   Navega al directorio del tema:
 
 cd wp-content/themes/orobianco
 
 Instala las dependencias:
 
-sh
+```sh
 
-    pnpm install
+
+ pnpm install
+
+sh
+```
 
 Scripts Disponibles
 Desarrollo
 
     Desarrollo de CSS:
 
-    sh
+    ```sh
 
 pnpm run dev:css
 
+sh
+
+````
 Este comando compila los archivos CSS usando Tailwind CSS, genera un archivo bundle.css y observa los cambios en los archivos para recompilar automáticamente.
 
 Desarrollo de JS:
 
-sh
+```sh
 
 pnpm run dev:js
+
+```sh
 
 Este comando utiliza Rollup junto con el plugin de TypeScript para compilar los archivos JavaScript y observa los cambios para recompilar automáticamente.
 
 Modo de Desarrollo:
 
-sh
+```sh
 
-    pnpm run dev
+ pnpm run dev
 
-    Este comando ejecuta en paralelo los comandos de desarrollo de CSS y JS mencionados anteriormente.
+```sh
+
+ Este comando ejecuta en paralelo los comandos de desarrollo de CSS y JS mencionados anteriormente.
 
 Construcción
 
-    Construcción de la Aplicación:
+ Construcción de la Aplicación:
 
-    sh
+ ```sh
 
-    pnpm run build
+ pnpm run build
 
-    Este comando compila los archivos CSS y JS para producción, optimizando los resultados.
+```sh
+
+
+ Este comando compila los archivos CSS y JS para producción, optimizando los resultados.
 
 Estructura del Proyecto
 
-    main.css: Archivo principal de estilos CSS que utiliza Tailwind CSS.
-    bundle.css: Archivo generado que contiene los estilos compilados.
-    src/: Directorio que contiene los archivos fuente de JavaScript/TypeScript.
+ main.css: Archivo principal de estilos CSS que utiliza Tailwind CSS.
+ bundle.css: Archivo generado que contiene los estilos compilados.
+ src/: Directorio que contiene los archivos fuente de JavaScript/TypeScript.
 
 PostCSS
 
 Este proyecto utiliza PostCSS para procesar los archivos CSS. La configuración de PostCSS se encuentra en el archivo package.json bajo la sección postcss. Aquí se utilizan los siguientes plugins:
 
-    postcss-import: Para importar archivos CSS.
-    tailwindcss: Para utilizar Tailwind CSS.
-    autoprefixer: Para agregar prefijos específicos del navegador.
-    cssnano: Para optimizar y minimizar el CSS.
+ postcss-import: Para importar archivos CSS.
+ tailwindcss: Para utilizar Tailwind CSS.
+ autoprefixer: Para agregar prefijos específicos del navegador.
+ cssnano: Para optimizar y minimizar el CSS.
 
 Rollup
 
 Rollup se utiliza como el empaquetador de módulos JavaScript, junto con los siguientes plugins:
 
-    @rollup/plugin-node-resolve: Para resolver módulos desde node_modules.
-    @rollup/plugin-terser: Para minimizar los archivos JS.
-    @rollup/plugin-typescript: Para compilar archivos TypeScript.
+ @rollup/plugin-node-resolve: Para resolver módulos desde node_modules.
+ @rollup/plugin-terser: Para minimizar los archivos JS.
+ @rollup/plugin-typescript: Para compilar archivos TypeScript.
 
 La configuración de Rollup se encuentra en un archivo llamado rollup.config.js.
 Modificación del Tema
@@ -102,12 +115,13 @@ Contribución
 
 Si deseas contribuir al desarrollo de este tema, por favor sigue los siguientes pasos:
 
-    Haz un fork del repositorio.
-    Crea una nueva rama para tu funcionalidad (git checkout -b nueva-funcionalidad).
-    Realiza tus cambios y haz commit (git commit -m 'Añadir nueva funcionalidad').
-    Sube tus cambios a tu fork (git push origin nueva-funcionalidad).
-    Abre un Pull Request.
+ Haz un fork del repositorio.
+ Crea una nueva rama para tu funcionalidad (git checkout -b nueva-funcionalidad).
+ Realiza tus cambios y haz commit (git commit -m 'Añadir nueva funcionalidad').
+ Sube tus cambios a tu fork (git push origin nueva-funcionalidad).
+ Abre un Pull Request.
 
 Soporte
 
 Si tienes alguna pregunta o necesitas soporte, por favor abre un issue en el repositorio o contacta al desarrollador principal del tema.
+````
