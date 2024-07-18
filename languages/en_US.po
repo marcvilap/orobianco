@@ -1,0 +1,251 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-06-29 14:16-0600\n"
+"PO-Revision-Date: 2024-06-29 14:16-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__;esc_attr_e;esc_attr__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: footer.php:12
+msgid "Nuestros partners"
+msgstr "Our partners"
+
+#: footer.php:42
+msgid "Enlaces"
+msgstr "Links"
+
+#: footer.php:61
+msgid "Ayuda"
+msgstr "Help"
+
+#: footer.php:80
+msgid "Legales"
+msgstr "Legals"
+
+#: footer.php:99
+msgid "Ubicación"
+msgstr "Location"
+
+#: footer.php:106 footer.php:223
+msgid "Urb. Colina del Sol, 49-A 03710 Calpe, Alicante, España"
+msgstr "Urb. Colina del Sol, 49-A 03710 Calpe, Alicante, Spain"
+
+#: footer.php:109 header.php:46 template-contact.php:24
+msgid "Orobianco Ristorante"
+msgstr "Orobianco Ristorante"
+
+#: footer.php:114 footer.php:161 header.php:47 template-contact.php:39
+msgid "O·B Rooftop"
+msgstr "O·B Rooftop"
+
+#: footer.php:127
+msgid "Síguenos en redes"
+msgstr "Follow us on social media"
+
+#: footer.php:184 template-contact.php:53
+msgid "Events"
+msgstr "Events"
+
+#: footer.php:205
+msgid "Grupo Orobianco - Todos los derechos reservados."
+msgstr "Orobianco Group - All rights reserved."
+
+#: footer.php:205
+msgid "Diseño Web x Drool"
+msgstr "Web Design by Drool"
+
+#: functions.php:74 functions.php:113
+msgid "El formulario se ha enviado correctamente."
+msgstr "The form has been submitted successfully."
+
+#: functions.php:76 functions.php:115
+msgid "Algo salió mal, por favor intenta de nuevo."
+msgstr "Something went wrong, please try again."
+
+#: header.php:44
+msgid "Reservas"
+msgstr "Bookings"
+
+#: template-bonds.php:40
+msgid "Ver oferta"
+msgstr "View deal"
+
+#: template-contact.php:26 template-contact.php:55
+msgid "Contacto"
+msgstr "Contact"
+
+#: template-contact.php:31 template-contact.php:46
+msgid "Horario"
+msgstr "Horary"
+
+#: template-contact.php:32
+msgid "Miércoles a domingo: 13-14.30 y 20-21.30 h"
+msgstr "Wednesday to Sunday: 13-14.30 and 20-21.30 h"
+
+#: template-contact.php:33
+msgid "Horario de verano (16 julio a 31 agosto)"
+msgstr "Summer schedule (July 16 to August 31)"
+
+#: template-contact.php:34
+msgid "Martes y miércoles: 20-21.30 h"
+msgstr "Tuesday and Wednesday: 20-21.30 h"
+
+#: template-contact.php:35
+msgid "Jueves a Sábado: 13-14.30 y 20-21.30 h"
+msgstr "Thursday to Saturday: 13-14.30 and 20-21.30 h"
+
+#: template-contact.php:47
+msgid "Mayo a Septiembre: 18-01 h"
+msgstr "May to September: 18-01 h"
+
+#: template-contact.php:48
+msgid "Julio y Agosto: 19-02 h"
+msgstr "July and August: 19-02 h"
+
+#: template-contact.php:49
+msgid "Cocina: 19-22.30 h"
+msgstr "Kitchen: 19-22.30 h"
+
+#: template-contact.php:67 template-work.php:23
+msgid "Los campos con * son obligatorios"
+msgstr "Fields with * are required"
+
+#: template-contact.php:69
+msgid "EMAIL"
+msgstr "EMAIL"
+
+#: template-contact.php:70
+msgid "TELÉFONO"
+msgstr "PHONE"
+
+#: template-contact.php:71
+msgid "CONSULTA"
+msgstr "CONSULTATION"
+
+#: template-contact.php:74 template-work.php:49
+msgid "He leído y acepto la"
+msgstr "I have read and accept the"
+
+#: template-contact.php:74 template-work.php:49
+msgid "política de privacidad"
+msgstr "privacy policy"
+
+#: template-contact.php:76 template-work.php:51
+msgid "Enviar"
+msgstr "Send"
+
+#: template-events.php:60
+msgid "Quiero más información"
+msgstr "I want more information"
+
+#: template-menu.php:30
+msgid "Menú"
+msgstr "Menu"
+
+#: template-menu.php:34
+msgid "Ver menú"
+msgstr "See menu"
+
+#: template-restaurant.php:150
+msgid "Descubre nuestro menú"
+msgstr "Discover our menu"
+
+#: template-rooftop.php:58
+msgid "Ver carta de cócteles"
+msgstr "See cocktail menu"
+
+#: template-work.php:25
+msgid "TIPO DE TRABAJO *"
+msgstr "TYPE OF JOB *"
+
+#: template-work.php:26
+msgid "Prácticas"
+msgstr "Practices"
+
+#: template-work.php:27
+msgid "Trabajo"
+msgstr "Job"
+
+#: template-work.php:30
+msgid "CENTRO DE TRABAJO *"
+msgstr "WORKPLACE *"
+
+#: template-work.php:31
+msgid "Orobianco Ristorante di Calpe"
+msgstr "Orobianco Ristorante di Calpe"
+
+#: template-work.php:32
+msgid "O-B La Coctelería de Orobianco"
+msgstr "O-B The Cocktail Bar of Orobianco"
+
+#: template-work.php:35
+msgid "PUESTO *"
+msgstr "POSITION *"
+
+#: template-work.php:36
+msgid "Cocina (Orobianco Ristorante di Calpe)"
+msgstr "Kitchen (Orobianco Restaurant in Calpe)"
+
+#: template-work.php:37
+msgid "Bar (O-B La Coctelería de Orobianco)"
+msgstr "Bar (O-B The Cocktail Bar of Orobianco)"
+
+#: template-work.php:38
+msgid "Sala"
+msgstr "Hall"
+
+#: template-work.php:39
+msgid "Otro"
+msgstr "Other"
+
+#: template-work.php:41
+msgid "NOMBRE Y APELLIDOS *"
+msgstr "NAME AND SURNAME *"
+
+#: template-work.php:42
+msgid "EMAIL *"
+msgstr "EMAIL *"
+
+#: template-work.php:43
+msgid "TELÉFONO *"
+msgstr "PHONE *"
+
+#: template-work.php:44
+msgid "Currículum vitae *"
+msgstr "Curriculum vitae *"
+
+#: template-work.php:46
+msgid "CONSULTA *"
+msgstr "CONSULTATION *"
+
+#~ msgid "Buscar:"
+#~ msgstr "Search:"
+
+#~ msgid "Newsletter"
+#~ msgstr "Newsletter"
+
+#~ msgid "Nombre"
+#~ msgstr "Name"
+
+#~ msgid "Apellidos"
+#~ msgstr "Last name"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Perfil"
+#~ msgstr "Perfil"
+
+#~ msgid "Idioma"
+#~ msgstr "Idioma"

@@ -1,0 +1,10 @@
+{
+  "search.exclude": {
+    "**/.vscode": true,
+    "**/node_modules": true,
+    "pnpm-lock.yaml": true
+  },
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true
+}

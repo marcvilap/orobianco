@@ -1,0 +1,386 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 300 900;
+    font-display: swap;
+    src: url(./assets/fonts/red-hat-display-normal.woff2) format("woff2");
+  }
+
+  @media (max-width: 400px) {
+    html {
+      font-size: 4vw;
+    }
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    @apply touch-manipulation scroll-smooth tracking-[.02em] text-neutral-800 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-balance;
+  }
+
+  p {
+    @apply text-pretty;
+  }
+
+  select {
+    @apply cursor-pointer;
+  }
+
+  summary {
+    @apply list-none;
+  }
+
+  summary::-webkit-details-marker {
+    @apply hidden;
+  }
+}
+
+@layer components {
+  .wpcf7-form
+    input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not(
+      :placeholder-shown
+    ),
+  .wpcf7-form textarea:not(:placeholder-shown),
+  .wpcf7-form select.has-value,
+  .input-text:not(:placeholder-shown) {
+    @apply mt-8 block w-full appearance-none rounded-none border-b border-current bg-white pb-2 text-lg font-semibold outline-none placeholder:text-neutral-500 text-neutral-800;
+  }
+
+  .wpcf7-form
+    input:not([type="submit"]):not([type="file"]):not([type="checkbox"]),
+  .wpcf7-form textarea,
+  .wpcf7-form select,
+  .input-text {
+    @apply mt-8 block w-full appearance-none rounded-none border-b border-current bg-white pb-2 text-lg font-semibold outline-none placeholder:text-neutral-500 text-neutral-500;
+  }
+
+  .wpcf7-form
+    input:not([type="submit"]):not([type="file"]):not([type="checkbox"]),
+  .wpcf7-form textarea,
+  .wpcf7-form select,
+  .input-text {
+    @apply mt-8 block w-full appearance-none rounded-none border-b border-current bg-white pb-2 text-lg font-semibold outline-none placeholder:text-neutral-500 text-neutral-500;
+  }
+
+  .wpcf7-form select,
+  select.input-text {
+    background: url(./assets/images/down.svg) right center no-repeat;
+    background-size: 1rem;
+  }
+
+  .button {
+    @apply inline-flex h-12 cursor-pointer items-center justify-center border border-current px-4 text-center font-semibold uppercase tracking-[.04em] text-neutral-800 transition-colors hover:border-neutral-500 hover:bg-neutral-500 hover:text-white;
+  }
+
+  @media (max-width: 400px) {
+    .button {
+      @apply w-full min-w-32;
+    }
+  }
+}
+
+@layer utilities {
+  .hover-links-underline a {
+    @apply decoration-1 hover:underline;
+  }
+
+  .hover-links-black a {
+    @apply transition-colors hover:text-neutral-800;
+  }
+
+  .hover-links-gray a {
+    @apply transition-colors hover:text-neutral-500;
+  }
+
+  .cursor-events {
+    cursor: url(./assets/images/cursor-events.svg) 64 64, pointer;
+  }
+
+  .cursor-play {
+    cursor: url(./assets/images/cursor-play.svg) 64 64, pointer;
+  }
+
+  .cursor-restaurant {
+    cursor: url(./assets/images/cursor-restaurant.svg) 64 64, pointer;
+  }
+
+  .cursor-rooftop {
+    cursor: url(./assets/images/cursor-rooftop.svg) 64 64, pointer;
+  }
+
+  .cursor-events-en {
+    cursor: url(./assets/images/cursor-events-en.svg) 64 64, pointer;
+  }
+
+  .cursor-restaurant-en {
+    cursor: url(./assets/images/cursor-restaurant-en.svg) 64 64, pointer;
+  }
+
+  .cursor-rooftop-en {
+    cursor: url(./assets/images/cursor-rooftop-en.svg) 64 64, pointer;
+  }
+}
+
+/* PROSE
+****************************************************************************************************/
+.prose {
+  @apply md:text-lg;
+}
+
+.prose > *:first-child {
+  @apply mt-0;
+}
+
+.prose > *:last-child {
+  @apply mb-0;
+}
+
+.prose h1 {
+  @apply text-5xl;
+}
+
+.prose h2 {
+  @apply text-4xl;
+}
+
+.prose h3 {
+  @apply text-3xl;
+}
+
+.prose h4 {
+  @apply text-2xl;
+}
+
+.prose h5 {
+  @apply text-xl;
+}
+
+.prose h6 {
+  @apply text-lg;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply mb-4 mt-8 font-semibold;
+}
+
+.prose p,
+.prose ol,
+.prose ul {
+  @apply mb-4;
+}
+
+.prose figure,
+.prose table,
+.prose blockquote,
+.prose iframe,
+.prose hr,
+.prose pre {
+  @apply my-8;
+}
+
+.prose blockquote {
+  @apply border-l-4 pl-6 text-xl font-medium italic lg:text-2xl;
+}
+
+.prose iframe {
+  @apply aspect-video w-full;
+}
+
+.prose a:not(.button) {
+  @apply underline decoration-1;
+}
+
+.prose ul {
+  @apply list-disc pl-6;
+}
+
+.prose ol {
+  @apply list-decimal pl-6;
+}
+
+.prose img,
+.prose table {
+  @apply w-full;
+}
+
+.prose th,
+.prose td {
+  @apply border-y p-2 text-left;
+}
+
+/* DIALOG
+****************************************************************************************************/
+.popup {
+  opacity: 0;
+  transform: translateY(4rem) scale(0.8);
+  transition-property: opacity, transform, display, overlay;
+  transition-duration: 0.3s;
+  transition-behavior: allow-discrete;
+}
+
+.popup:popover-open {
+  opacity: 1;
+  transform: translateY(0rem) scale(1);
+
+  @starting-style {
+    opacity: 0;
+    transform: translateY(4rem) scale(0.8);
+  }
+}
+
+@screen xl {
+  /* PARALLAX
+	****************************************************************************************************/
+  @keyframes parallax-up {
+    from {
+      transform: translateY(4rem);
+    }
+
+    to {
+      transform: translateY(-4rem);
+    }
+  }
+
+  @keyframes parallax-down {
+    from {
+      transform: translateY(-4rem);
+    }
+
+    to {
+      transform: translateY(4rem);
+    }
+  }
+
+  @keyframes parallax-zoom {
+    from {
+      transform: scale(0.8);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .parallax-up {
+    animation-name: parallax-up;
+    animation-timing-function: linear;
+    animation-timeline: view(-4rem);
+  }
+
+  .parallax-down {
+    animation-name: parallax-down;
+    animation-timing-function: linear;
+    animation-timeline: view(-4rem);
+  }
+
+  .parallax-zoom {
+    animation-name: parallax-zoom;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry;
+    transform-origin: top center;
+  }
+}
+
+/* REVEAL EFFECT
+	****************************************************************************************************/
+.reveal-group:not(.reveal-group-active) .reveal-zoom-in,
+.reveal-group:not(.reveal-group-active) .reveal-fade-up,
+.reveal-group:not(.reveal-group-active) .reveal-fade-left,
+.reveal-group:not(.reveal-group-active) .reveal-fade-right {
+  opacity: 0;
+}
+
+.reveal-group:not(.reveal-group-active) .reveal-zoom-in {
+  transform: scale(0.9);
+}
+
+.reveal-group:not(.reveal-group-active) .reveal-fade-up {
+  transform: translateY(6rem);
+}
+
+.reveal-group:not(.reveal-group-active) .reveal-fade-left {
+  transform: translateX(6rem);
+}
+
+.reveal-group:not(.reveal-group-active) .reveal-fade-right {
+  transform: translateX(-6rem);
+}
+
+.reveal-group-active .reveal-zoom-in,
+.reveal-group-active .reveal-fade-up,
+.reveal-group-active .reveal-fade-left,
+.reveal-group-active .reveal-fade-right {
+  will-change: opacity, transform;
+  transition-duration: 1s;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-group-active .reveal-delay-100 {
+  transition-delay: 100ms;
+}
+
+.reveal-group-active .reveal-delay-200 {
+  transition-delay: 200ms;
+}
+
+.reveal-group-active .reveal-delay-300 {
+  transition-delay: 300ms;
+}
+
+.reveal-group-active .reveal-delay-500 {
+  transition-delay: 500ms;
+}
+
+.reveal-group-active .reveal-delay-750 {
+  transition-delay: 750ms;
+}
+
+.reveal-group-active .reveal-delay-1000 {
+  transition-delay: 1000ms;
+}
+.reveal-group-active .reveal-delay-1250 {
+  transition-delay: 1250ms;
+}
+.reveal-group-active .reveal-delay-1500 {
+  transition-delay: 1500ms;
+}
+.reveal-group-active .reveal-delay-2000 {
+  transition-delay: 2000ms;
+}
+
+.wpcf7-list-item {
+  margin-left: 0 !important;
+}
+
+.cmplz-cookiebanner .cmplz-categories .cmplz-category {
+  background-color: white !important;
+}
+
+.cmplz-cookiebanner .cmplz-categories .cmplz-category .cmplz-description,
+.cmplz-cookiebanner
+  .cmplz-categories
+  .cmplz-category
+  .cmplz-category-header
+  .cmplz-category-title {
+  color: black !important;
+}
