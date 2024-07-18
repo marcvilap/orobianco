@@ -17,14 +17,9 @@ Asegúrate de tener instalados los siguientes programas:
    ```sh
    git clone <URL_DEL_REPOSITORIO> wp-content/themes/orobianco
 
-
-   Navega al directorio del tema:
-
    ```
 
-   ```
-
-   ```
+Navega al directorio del tema:
 
 cd wp-content/themes/orobianco
 
