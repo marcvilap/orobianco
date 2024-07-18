@@ -51,49 +51,44 @@ Este comando utiliza Rollup junto con el plugin de TypeScript para compilar los 
 
 Modo de Desarrollo:
 
-````sh
-
- pnpm run dev
-
 ```sh
+ pnpm run dev
+```
 
- Este comando ejecuta en paralelo los comandos de desarrollo de CSS y JS mencionados anteriormente.
+Este comando ejecuta en paralelo los comandos de desarrollo de CSS y JS mencionados anteriormente.
 
 Construcción
 
- Construcción de la Aplicación:
-
- ```sh
-
- pnpm run build
+Construcción de la Aplicación:
 
 ```sh
+pnpm run build
+```
 
-
- Este comando compila los archivos CSS y JS para producción, optimizando los resultados.
+Este comando compila los archivos CSS y JS para producción, optimizando los resultados.
 
 Estructura del Proyecto
 
- main.css: Archivo principal de estilos CSS que utiliza Tailwind CSS.
- bundle.css: Archivo generado que contiene los estilos compilados.
- src/: Directorio que contiene los archivos fuente de JavaScript/TypeScript.
+main.css: Archivo principal de estilos CSS que utiliza Tailwind CSS.
+bundle.css: Archivo generado que contiene los estilos compilados.
+src/: Directorio que contiene los archivos fuente de JavaScript/TypeScript.
 
 PostCSS
 
 Este proyecto utiliza PostCSS para procesar los archivos CSS. La configuración de PostCSS se encuentra en el archivo package.json bajo la sección postcss. Aquí se utilizan los siguientes plugins:
 
- postcss-import: Para importar archivos CSS.
- tailwindcss: Para utilizar Tailwind CSS.
- autoprefixer: Para agregar prefijos específicos del navegador.
- cssnano: Para optimizar y minimizar el CSS.
+postcss-import: Para importar archivos CSS.
+tailwindcss: Para utilizar Tailwind CSS.
+autoprefixer: Para agregar prefijos específicos del navegador.
+cssnano: Para optimizar y minimizar el CSS.
 
 Rollup
 
 Rollup se utiliza como el empaquetador de módulos JavaScript, junto con los siguientes plugins:
 
- @rollup/plugin-node-resolve: Para resolver módulos desde node_modules.
- @rollup/plugin-terser: Para minimizar los archivos JS.
- @rollup/plugin-typescript: Para compilar archivos TypeScript.
+@rollup/plugin-node-resolve: Para resolver módulos desde node_modules.
+@rollup/plugin-terser: Para minimizar los archivos JS.
+@rollup/plugin-typescript: Para compilar archivos TypeScript.
 
 La configuración de Rollup se encuentra en un archivo llamado rollup.config.js.
 Modificación del Tema
@@ -107,13 +102,16 @@ Contribución
 
 Si deseas contribuir al desarrollo de este tema, por favor sigue los siguientes pasos:
 
- Haz un fork del repositorio.
- Crea una nueva rama para tu funcionalidad (git checkout -b nueva-funcionalidad).
- Realiza tus cambios y haz commit (git commit -m 'Añadir nueva funcionalidad').
- Sube tus cambios a tu fork (git push origin nueva-funcionalidad).
- Abre un Pull Request.
+Haz un fork del repositorio.
+Crea una nueva rama para tu funcionalidad (git checkout -b nueva-funcionalidad).
+Realiza tus cambios y haz commit (git commit -m 'Añadir nueva funcionalidad').
+Sube tus cambios a tu fork (git push origin nueva-funcionalidad).
+Abre un Pull Request.
 
 Soporte
 
 Si tienes alguna pregunta o necesitas soporte, por favor abre un issue en el repositorio o contacta al desarrollador principal del tema.
-````
+
+```
+
+```
