@@ -26,11 +26,7 @@ cd wp-content/themes/orobianco
 Instala las dependencias:
 
 ```sh
-
-
  pnpm install
-
-sh
 ```
 
 Scripts Disponibles
