@@ -32,32 +32,26 @@ Instala las dependencias:
 Scripts Disponibles
 Desarrollo
 
-    Desarrollo de CSS:
+Desarrollo de CSS:
 
-    ```sh
-
+```sh
 pnpm run dev:css
-
-```
-sh
-
 ```
 
 Este comando compila los archivos CSS usando Tailwind CSS, genera un archivo bundle.css y observa los cambios en los archivos para recompilar automáticamente.
 
 Desarrollo de JS:
 
-````sh
-
+```sh
 pnpm run dev:js
 
-```sh
+```
 
 Este comando utiliza Rollup junto con el plugin de TypeScript para compilar los archivos JavaScript y observa los cambios para recompilar automáticamente.
 
 Modo de Desarrollo:
 
-```sh
+````sh
 
  pnpm run dev
 
